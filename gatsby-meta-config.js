@@ -14,7 +14,7 @@ module.exports = {
     name: `박용민`,
     bio: {
       role: `대학생`,
-      description: ['A.I에 관심을 가지기 시작한', '컴퓨터 비전을 배우는', '아직 쪼렙'],
+      description: ['A.I에 관심이 있는', '컴퓨터 비전을 배우는', '아직 쪼렙'],
       thumbnail: 'IMG_7105.JPG', // Path to the image in the 'asset' folder
     },
     social: {
@@ -98,7 +98,7 @@ module.exports = {
       {
         title: 'A.I 연구실',
         description: '학교에서 좋은 기회로 A.I 컴퓨터 비전 연구실에 들어가게 되었습니다. 이때부터 여러 논문들을 접하고 읽게 되어 그 내용을 정리할 블로그를 만들기로 결정했습니다.',
-        techStack: ['Python', 'PyTorch'],
+        techStack: ['Python', 'PyTorch', 'CV', 'C++'],
         thumbnailUrl: 'Inha.jpg',
         links: {
           post: '',

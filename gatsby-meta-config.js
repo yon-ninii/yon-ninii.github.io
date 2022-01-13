@@ -1,6 +1,6 @@
 module.exports = {
   title: 'A.I Study Blog',
-  description: '대학생의 개발 공부 블로그',
+  description: `대학생의 개발 공부 블로그`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: 'https://yon-ninii.github.io',
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
@@ -29,6 +29,28 @@ module.exports = {
     timestamps: [
       // =====       [Timestamp Sample and Structure]      =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
+      {
+        date: '1998.07.01',
+        activity: '출생',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      },
+      {
+        date: '2017.03 ~',
+        activity: '인하대학교 정보통신공학과 입학',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      },
       {
         date: '2022.01 ~',
         activity: '블로그 오픈',

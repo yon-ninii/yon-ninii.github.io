@@ -1,5 +1,5 @@
 module.exports = {
-  title: `A.I Study Blog`,
+  title: 'A.I Study Blog',
   description: `대학생의 개발 공부 블로그`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://yon-ninii.github.io`,
@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `대학생`,
       description: ['A.I에 관심을 가지기 시작한', '컴퓨터 비전', '아직 쪼렙'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      thumbnail: 'IMG_7105.JPG', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/yon-ninii`, // `https://github.com/zoomKoding`,

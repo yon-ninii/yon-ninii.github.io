@@ -1,8 +1,8 @@
 module.exports = {
-  title: `zoomkoding.com`,
-  description: `줌코딩의 개발일기`,
+  title: `A.I Study Blog`,
+  description: `대학생의 개발 공부 블로그`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://www.zoomkoding.com`,
+  siteUrl: `https://yon-ninii.github.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
@@ -11,16 +11,16 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: `정진혁`,
+    name: `박용민`,
     bio: {
-      role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
+      role: `대학생`,
+      description: ['A.I에 관심을 가지기 시작한', '컴퓨터 비전', '아직 쪼렙'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/zoomKoding`,
+      github: `https://github.com/yon-ninii`, // `https://github.com/zoomKoding`,
       linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
-      email: ``, // `zoomkoding@gmail.com`,
+      email: `701pooh@naver.com`, // `zoomkoding@gmail.com`,
     },
   },
 
@@ -30,8 +30,8 @@ module.exports = {
       // =====       [Timestamp Sample and Structure]      =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
       {
-        date: '',
-        activity: '',
+        date: '1998.07 ~',
+        activity: '출생',
         links: {
           github: '',
           post: '',
@@ -40,25 +40,38 @@ module.exports = {
           demo: '',
         },
       },
-      // ========================================================
-      // ========================================================
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '2017.03 ~',
+        activity: '입학',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          github: 'https://github.com/yon-ninii',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
         },
       },
+      {
+        date: '2022.01 ~',
+        activity: '블로그 오픈',
+        links: {
+          github: 'https://github.com/yon-ninii',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      },
+      // ========================================================
+      // ========================================================
     ],
 
     projects: [
       // =====        [Project Sample and Structure]        =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!)  =====
       {
-        title: '',
-        description: '',
+        title: 'A.I 연구실',
+        description: '학교에서 좋은 기회로 A.I 컴퓨터 비전 연구실에 들어가게 되었습니다. 이때부터 여러 논문들을 접하고 읽게 되어 그 내용을 정리할 블로그를 만들기로 결정했습니다.',
         techStack: ['', ''],
         thumbnailUrl: '',
         links: {

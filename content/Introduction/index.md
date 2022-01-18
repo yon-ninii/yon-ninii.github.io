@@ -4,7 +4,7 @@ title: 블로그 오픈했습니다!
 date: '2022-01-14 00:00:00'
 author: Yon_ninii
 tags: blog gatsby theme 개츠비 테마
-categories: 블로그 featured
+categories: 블로그
 ---
 
 ## 새롭게 만들게 된 A.I와 컴퓨터 비전에 대해 공부한 내용을 정리하는 블로그입니다.

@@ -64,117 +64,29 @@
         }
       }
     })
-  </script><title data-react-helmet="true">딥러닝 기초 용어 정리</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="딥러닝 기초 용어 정리"/><meta data-react-helmet="true" property="og:site_title" content="딥러닝 기초 용어 정리"/><meta data-react-helmet="true" name="description" content="안녕하세요. 오늘은 딥 러닝의 기초적인 용어들을 정리해보겠습니다. 기초 용어라고 해도 제가 배운 내용을 토대로 정리하는 거라 빠진 부분이나 틀린 부분이 많을 수 있습니다! 또한 주로 컴퓨터 비전 분야에서 많이 쓰이는 용어들을 주로 정리 했습니다! 1. Data 모델을 학습시키는 데이터. 일반적으로 모델에 들어가기 전 전처리를 필요로 한다. 2. Model 다양한 Layer 층으로 구성된 네트워크이다. 학습을 할 수 있는 파라미터들이 들어있다. 3. Convolution Layer   합성 곱 계층이라고 불리며 입력 값에 대해서 Filter를 합성 곱을 진행해서 Feature Map을 뽑아주는 계층이다. 뒤에서 나오겠지만 padding이라는 과정을 거치지 않으면 입력에 비해 출력 map은 크기가 줄어든다. 이렇게 나온 출력 Feature Map은 특징 맵이라고 불리며 입력 이미지에서 각 필터에 해당하는 특징을 뽑아낸 것이라고 생각하면 된다. (이 부분이 처음에는 직관적으로 이해하기 …"/><meta data-react-helmet="true" property="og:description" content="안녕하세요. 오늘은 딥 러닝의 기초적인 용어들을 정리해보겠습니다. 기초 용어라고 해도 제가 배운 내용을 토대로 정리하는 거라 빠진 부분이나 틀린 부분이 많을 수 있습니다! 또한 주로 컴퓨터 비전 분야에서 많이 쓰이는 용어들을 주로 정리 했습니다! 1. Data 모델을 학습시키는 데이터. 일반적으로 모델에 들어가기 전 전처리를 필요로 한다. 2. Model 다양한 Layer 층으로 구성된 네트워크이다. 학습을 할 수 있는 파라미터들이 들어있다. 3. Convolution Layer   합성 곱 계층이라고 불리며 입력 값에 대해서 Filter를 합성 곱을 진행해서 Feature Map을 뽑아주는 계층이다. 뒤에서 나오겠지만 padding이라는 과정을 거치지 않으면 입력에 비해 출력 map은 크기가 줄어든다. 이렇게 나온 출력 Feature Map은 특징 맵이라고 불리며 입력 이미지에서 각 필터에 해당하는 특징을 뽑아낸 것이라고 생각하면 된다. (이 부분이 처음에는 직관적으로 이해하기 …"/><meta data-react-helmet="true" property="og:author" content="박용민"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-02f59eb8e2b9c93c6a8d.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-b1cc9f858f4132668f22.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-97a8d3c35e8d1fa14a1b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/Deep learning terms/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">A.I Study Blog</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🎼</div><div class="info"><div class="categories"><a class="category" href="/posts/Basic">Basic</a></div></div><h1 class="title">딥러닝 기초 용어 정리</h1><div class="info"><div class="author">posted by <strong>Yon_ninii</strong>,</div> <!-- -->January 18, 2022</div></header><div class="post-content"><div class="markdown"><p><strong>안녕하세요. 오늘은 딥 러닝의 기초적인 용어들을 정리해보겠습니다. 기초 용어라고 해도 제가 배운 내용을 토대로 정리하는 거라 빠진 부분이나 틀린 부분이 많을 수 있습니다! 또한 주로 컴퓨터 비전 분야에서 많이 쓰이는 용어들을 주로 정리 했습니다!</strong></p>
-<h3 id="1-data" style="position:relative;"><a href="#1-data" aria-label="1 data permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Data</h3>
-<ul>
-<li>모델을 학습시키는 데이터. 일반적으로 모델에 들어가기 전 전처리를 필요로 한다.</li>
-</ul>
-<h3 id="2-model" style="position:relative;"><a href="#2-model" aria-label="2 model permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Model</h3>
-<ul>
-<li>다양한 Layer 층으로 구성된 네트워크이다. 학습을 할 수 있는 파라미터들이 들어있다.</li>
-</ul>
-<h3 id="3-convolution-layer" style="position:relative;"><a href="#3-convolution-layer" aria-label="3 convolution layer permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Convolution Layer</h3>
+  </script><title data-react-helmet="true">딥러닝 기초 이론 정리</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="딥러닝 기초 이론 정리"/><meta data-react-helmet="true" property="og:site_title" content="딥러닝 기초 이론 정리"/><meta data-react-helmet="true" name="description" content="안녕하세요. 오늘은 딥 러닝의 기초적인 이론들을 정리해보려고 합니다. 저는 뉴럴 네트워크 중에서도 CNN을 위주로 공부했기 때문에 아마 다른 부분을 다룬 포스팅을 원하신다면 다른 블로그를… 찾아보셔야 할거에요… 😂 그럼 시작해보겠습니다! 0. 들어가기 전.. 오늘 알아볼 것은 인공지능(A.I)에서도 머신러닝의 한 종류라고 할 수 있는 딥러닝입니다. 먼저 머신러닝(Machine Learning)은 해석해보면 ‘기계 학습’입니다. 처음 접하면 잘 이해가 안될 수 있지만 사실은 꽤나 직관적으로 표현된 이름입니다. 기계를 학습시킨다.. 라는 뜻을 이해하려면 먼저 학습을 알아야 합니다. 여기서 쓰이는 학습이라는 의미는 기계(모델)가 스스로 데이터의 규칙(Solution)을 찾도록 하는 것입니다. 이 기술과 반대되는 기술은 전통적인 방법으로 ‘Traditional’, ‘Hand-crafted’라고 표현합니다. 다른 말로 사람이 직접 데이터의 규칙을 정하고 컴퓨터는 그저 연산만 진행하는 방법입…"/><meta data-react-helmet="true" property="og:description" content="안녕하세요. 오늘은 딥 러닝의 기초적인 이론들을 정리해보려고 합니다. 저는 뉴럴 네트워크 중에서도 CNN을 위주로 공부했기 때문에 아마 다른 부분을 다룬 포스팅을 원하신다면 다른 블로그를… 찾아보셔야 할거에요… 😂 그럼 시작해보겠습니다! 0. 들어가기 전.. 오늘 알아볼 것은 인공지능(A.I)에서도 머신러닝의 한 종류라고 할 수 있는 딥러닝입니다. 먼저 머신러닝(Machine Learning)은 해석해보면 ‘기계 학습’입니다. 처음 접하면 잘 이해가 안될 수 있지만 사실은 꽤나 직관적으로 표현된 이름입니다. 기계를 학습시킨다.. 라는 뜻을 이해하려면 먼저 학습을 알아야 합니다. 여기서 쓰이는 학습이라는 의미는 기계(모델)가 스스로 데이터의 규칙(Solution)을 찾도록 하는 것입니다. 이 기술과 반대되는 기술은 전통적인 방법으로 ‘Traditional’, ‘Hand-crafted’라고 표현합니다. 다른 말로 사람이 직접 데이터의 규칙을 정하고 컴퓨터는 그저 연산만 진행하는 방법입…"/><meta data-react-helmet="true" property="og:author" content="박용민"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-02f59eb8e2b9c93c6a8d.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-b1cc9f858f4132668f22.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-97a8d3c35e8d1fa14a1b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/Deep learning basic theory/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">A.I Study Blog</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🤿</div><div class="info"><div class="categories"><a class="category" href="/posts/Basic">Basic</a></div></div><h1 class="title">딥러닝 기초 이론 정리</h1><div class="info"><div class="author">posted by <strong>Yon_ninii</strong>,</div> <!-- -->January 20, 2022</div></header><div class="post-content"><div class="markdown"><h4 id="안녕하세요-오늘은-딥-러닝의-기초적인-이론들을-정리해보려고-합니다-저는-뉴럴-네트워크-중에서도-cnn을-위주로-공부했기-때문에-아마-다른-부분을-다룬-포스팅을-원하신다면-다른-블로그를-찾아보셔야-할거에요-그럼-시작해보겠습니다" style="position:relative;"><a href="#%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94-%EC%98%A4%EB%8A%98%EC%9D%80-%EB%94%A5-%EB%9F%AC%EB%8B%9D%EC%9D%98-%EA%B8%B0%EC%B4%88%EC%A0%81%EC%9D%B8-%EC%9D%B4%EB%A1%A0%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%B4%EB%B3%B4%EB%A0%A4%EA%B3%A0-%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%A0%80%EB%8A%94-%EB%89%B4%EB%9F%B4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%A4%91%EC%97%90%EC%84%9C%EB%8F%84-cnn%EC%9D%84-%EC%9C%84%EC%A3%BC%EB%A1%9C-%EA%B3%B5%EB%B6%80%ED%96%88%EA%B8%B0-%EB%95%8C%EB%AC%B8%EC%97%90-%EC%95%84%EB%A7%88-%EB%8B%A4%EB%A5%B8-%EB%B6%80%EB%B6%84%EC%9D%84-%EB%8B%A4%EB%A3%AC-%ED%8F%AC%EC%8A%A4%ED%8C%85%EC%9D%84-%EC%9B%90%ED%95%98%EC%8B%A0%EB%8B%A4%EB%A9%B4-%EB%8B%A4%EB%A5%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%B0%BE%EC%95%84%EB%B3%B4%EC%85%94%EC%95%BC-%ED%95%A0%EA%B1%B0%EC%97%90%EC%9A%94-%EA%B7%B8%EB%9F%BC-%EC%8B%9C%EC%9E%91%ED%95%B4%EB%B3%B4%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4" aria-label="안녕하세요 오늘은 딥 러닝의 기초적인 이론들을 정리해보려고 합니다 저는 뉴럴 네트워크 중에서도 cnn을 위주로 공부했기 때문에 아마 다른 부분을 다룬 포스팅을 원하신다면 다른 블로그를 찾아보셔야 할거에요 그럼 시작해보겠습니다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>안녕하세요. 오늘은 딥 러닝의 기초적인 이론들을 정리해보려고 합니다. 저는 뉴럴 네트워크 중에서도 CNN을 위주로 공부했기 때문에 아마 다른 부분을 다룬 포스팅을 원하신다면 다른 블로그를… 찾아보셔야 할거에요… 😂 그럼 시작해보겠습니다!</h4>
+<hr>
+<h3 id="0-들어가기-전" style="position:relative;"><a href="#0-%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84" aria-label="0 들어가기 전 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0. 들어가기 전..</h3>
+<p>오늘 알아볼 것은 인공지능(A.I)에서도 머신러닝의 한 종류라고 할 수 있는 <strong>딥러닝</strong>입니다. 먼저 머신러닝(Machine Learning)은 해석해보면 ‘기계 학습’입니다. 처음 접하면 잘 이해가 안될 수 있지만 사실은 꽤나 직관적으로 표현된 이름입니다. 기계를 학습시킨다.. 라는 뜻을 이해하려면 먼저 <strong>학습</strong>을 알아야 합니다. 여기서 쓰이는 학습이라는 의미는 기계(모델)가 스스로 데이터의 규칙(Solution)을 찾도록 하는 것입니다. 이 기술과 반대되는 기술은 전통적인 방법으로 ‘Traditional’, ‘Hand-crafted’라고 표현합니다. 다른 말로 사람이 직접 데이터의 규칙을 정하고 컴퓨터는 그저 연산만 진행하는 방법입니다. 하지만 머신러닝은 컴퓨터가 학습을 반복하면서 규칙을 찾고 최적의 해를 구한다는 점에서 굉장히 차이가 있다고 할 수 있습니다. 여기서 왜 ‘머신’ + ‘러닝’(기계 + 학습)이 직관적이라고 표현 했는지 이해가 될 것이라고 생각합니다. 자, 그렇다면 이 머신러닝은 어떻게 구현이 될까 의문이 듭니다. 바로 여러가지 종류의 알고리즘 중에서 선택하면 되는데 그 중에서 인공신경망(Artificial Neural Network)을 쓰는 기술을 딥러닝이라고 합니다. 주로 머신러닝은 정형데이터, 딥러닝은 비정형데이터를 잘 처리한다고 하니 그 점 또한 참고해두면 좋을 것 같다. 이제 더 자세한 기초 이론을 뜯어보겠습니다!</p>
+<hr>
+<h3 id="1-뉴런" style="position:relative;"><a href="#1-%EB%89%B4%EB%9F%B0" aria-label="1 뉴런 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 뉴런</h3>
 <p><span
       class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 652px; "
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 84.44444444444446%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAADUUlEQVQ4y21U/W/iRhD1//9TlUS6qDmppARw+DABYoNtME4wBJxKx9WgHknAEL5SIOT4uGCDva9ac6CSdqUnz87Ovp3ZfWNGluXFer1eA7Bc17UB2IQQD9T+iJ1/OBzatXr9P/EMx3G2pmnYbDagw3Vd70sI8fBx7NZ7vR6SqRRapnkQzwRDISudyaB0d0dWqxVlIK7rkm2Mx3iA3Vq73SbxeJwo+Tz50zD28czFxYXFCwJESSTZbBaO4+xP/PfJO+wy7PZ6iMZikCQJMY6D2W57foa9vLRSPI+UkCbhaAxfqlWsbfuAdDs5LPm520UkGoUgCAiGQiiWSqjVamD84ajF3j8gxovEFwgiWyih1X/BygUWa4LW8BmT5RAEzvaAn8Sd5w64eBw5RcFFIACtWMTvfj8YThCtyNMcsWqbsFwCmZwCszcAzYPCqNVxnUlhNOtj6U6xWL95hIP+ENcpAWJGgu/8HEo+j1+OjsBEr9PWVWOCwOOC+AQV6YwIsz/0NLJcu6g9tuAPx1G4L8LCHFP7BQtMYHT+QEQIQivfIsSyKGgajk9OtoTxxyliT3MSSuehyiKmr6/7q2s+NcELaS8DOt43C6wwx8PAwLl0gmydQ1aVod7cbAm5FG9FakOwT0vCKmVIOQXPL2PYBFg5BA9mExwfgVTgYWOJH5s5Vpjhr95XcKkYFCXv3aGu6zg6PgYTvmQtQdMRN5cknCuiVNTQH01AW4cSzn4sIGYFFG4176ln9gQOLHR7XVxdJZBXVQSCQVQqFfzm84FJpFIWn7yCVKkSP5+DWryDOfgbFgHm1gZUlS+vc5S/VvCO71g7W0mNRiOvU/aEuo5fz87ANJtNS5JlyGKGRCJh3BYKmEwme+lNv88wnS+oaPaSoYM2ANUs3Rv8meHZ589g6E9hMBhAlGVyGYmA9vV4PN5vrNfrYFkW5XL5f3vcMAzvlekdfjo9BaOq6vttoeB+qVadRCLh5FXVGY/HtFLHdV1nm4zjbJyNZ1PYtu2oNzeOqqqOoiieXSqVnE+npw6TEUUkk8mt+judw5I/ZLOzabm0M3ie92Kp/1ujsS35W6NRrFar94QQHYDeMk397e3Ns6nvI6jfdV3dNE3dMAxvvkOM4/R/AArguxPBjimYAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    style="padding-bottom: 79.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjElEQVQ4yz2T2U6qQRCE54rEBRQQARHZkVUF2QRlDQQQw5IQE+HCAOGOhJfwAXjiPvk6+c9F54eZnuqq6m7j8/nE5XLJ9fW12O12ubq6EofDIaFQSMrlsnB/f38v8Xhc7zwez/+4u7vTs7OzM7HZbPo12WxWHh8fJRAIiNPpVDCS/H6/np+fnyso/wEAnLybmxvJ5XISi8Xk4uJC3xBmPB5LPp9XQIvl5eWluN1uSafTega7ZDIpiURCwuGwxsPDg6r4+PgQSFGQ/+bp6UkTLeqAwQBWr6+vCrTf7+V0OsnX15fUajVlDiiyO52O/P7+Srvdln6/LyYYDEokElEfAYQp1ZGWyWS0+mazkb+/P2m1Wnper9dVKoCw//7+lul0qmcGqgSMiGKxKNFoVM8o9PLyIpVKRc8JfJvNZlIqlSSVSukbFJFLGMzFJzxDOn4CQgAKuOXfer2Ww+Eg2+1W3t7elDGWcY9CpsIgi+5Bn2rPz88qA08Gg4GywDOYHY9Hlfb5+alAgFpBPiQMD+gOXuEdTKgIMME9yUwDD/GQe6uzvPF6vdJoNGQ4HIrhEpnQhTZNoTpMYIbRdJYcfjNK5ACCMmtGKd7r9cRgJEkkYC7fZrMpy+VSmQGEj1hD8PD9/V1Zkov/qCoUCtooc3t7q1PPHPIbCVQlGZmA4ikPGBdkLxYLmUwm+o6Vw3+IIduwakiwxgaWrBuXDC1gMOOLEhijYDQaSbfblWq1qsVoGvnqIcmwI5BAZYrgKZVJpjlIJ4fCyGPtkM97y2vDD3yhOt0mmZnEAgC5n8/nui3IZ+W4BwQwht2yja0zdIod3O122mmYYQNhjRFzt1qttOvsNwRg+PPzo8DIhhB2/QMCo9VLEAvdsgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
         alt="Untitled"
         title="Untitled"
-        src="/static/c976e380ff6d694a0ecaef825f007043/dba9a/Untitled.png"
-        srcset="/static/c976e380ff6d694a0ecaef825f007043/e9ff0/Untitled.png 180w,
-/static/c976e380ff6d694a0ecaef825f007043/f21e7/Untitled.png 360w,
-/static/c976e380ff6d694a0ecaef825f007043/dba9a/Untitled.png 652w"
-        sizes="(max-width: 652px) 100vw, 652px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 395px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 72.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAklEQVQ4y5WU7U9TZxiH+ZvcZCqaZYjBaV2yRJm2MfHLPvrBZH5YSIwgZk5xLpmGFBGUV4HSUoQY92ExrRpoR1fsqa0tFDij7WnPaaHpm/blXOacVsGYTX2SO3dynvP87uu+f+c8DXzGUlX1P7fqWWmoVCpk5GW2Ei/ZSoTYTITIJEMoiTCx1CrRZISoskImm66drFZroao7Q60XUxqKhRzesVYWB77AO7iXxXt78N3dzaPRbzh/5xi/Wts41/M1Dt/k/8LXO1AaCvkcLyYNuM2NCCMHmO/ZR3BoH3P9B+maPsV1u4mOiaM4fVP6yVT0X+SVFZKShKIoJJNJLatapzph6VWepwOtPDN/iTC6n3+GmvAP7uXP0Ra6rD9wfcbIT70HcQoWXVCwTPCw/Wfk1VW2sllkWSaVSqm5XK4mqBF6x4/y7NZuloYPsNDXRGC4iZneZq7MmeieNtJpMbwjDD91ItinWQ+HiUsSoiiysbGh5vP5bUJX/yE8vbtwmRvx3P6K8L1G/hprpsPSxo1ZExdGD+P0T+mTkjdTFMtlZEUhk8lodKTT6W3BQiHH9FQbI/0tWMaOMNzXin38W/oGDVybM9JtN+mEjjqhKK4Ti0ZZX1sjFot9SFh8XeDS/TNcmDxO+8hxOq0n6bSd5JcHRq5YTnBNm6G5mSd+q06YSEpks1ndDI1QM+a9GeYLOf548CNXbW38PmvitxkjN2aNuhlXbafotp/mkuUYTsGqEyblBJIk6XQ7sloqleqEr/J0Dp2gfaiVLst3dIwbuDh2hI4JA+fNh7g89T1nb+7h8fP7n/YdlstlwhtegqKLoPg3kfhz1mUBUX5BRPISWHMTEBeQN6P6yVDoJcFgkEAgwNLSEn6/H5/Ptz3D9+pUIRRc0cO94GErnf3gX45EIgiCgNfr1QW17HK51GKxWBPUXqpWK6hqlVK5xPJyGI9nEZvNSlyK60KValnf15bb7cbhcDA/P4/T6SQej9drqbWWP3aTvH3+NmvOaiKay5opmrs7L4c3g3QMWoCcUXYAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="Untitled1"
-        title="Untitled1"
-        src="/static/e4ccb8d5742b26a460bc0816b7d053d3/2cb6c/Untitled1.png"
-        srcset="/static/e4ccb8d5742b26a460bc0816b7d053d3/e9ff0/Untitled1.png 180w,
-/static/e4ccb8d5742b26a460bc0816b7d053d3/f21e7/Untitled1.png 360w,
-/static/e4ccb8d5742b26a460bc0816b7d053d3/2cb6c/Untitled1.png 395w"
-        sizes="(max-width: 395px) 100vw, 395px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<ul>
-<li><strong>합성 곱 계층</strong>이라고 불리며 입력 값에 대해서 Filter를 합성 곱을 진행해서 Feature Map을 뽑아주는 계층이다. 뒤에서 나오겠지만 padding이라는 과정을 거치지 않으면 입력에 비해 출력 map은 크기가 줄어든다. 이렇게 나온 출력 Feature Map은 특징 맵이라고 불리며 입력 이미지에서 각 필터에 해당하는 특징을 뽑아낸 것이라고 생각하면 된다. (이 부분이 처음에는 직관적으로 이해하기 어려웠는데 아래 그림을 보고 조금은 도움이 되었다.)</li>
-</ul>
-<blockquote>
-<p>(+) 아래 그림에서 좌측의 동그라미가 각 입력 이미지들이고 작은 이미지가 필터이다. 그렇게 특징을 뽑아내면 세번째 그림같이 특정 response가 나타난다. 이런 식으로 특징을 뽑는다고 이해하면 조금은 편해질 것 같다.</p>
-</blockquote>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 55.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACFUlEQVQoz3VSXW8SQRTd32P/QSW8Gv+EWhNifSHGaOJDjcTHGiUNvvBCWGv6LIY0Shqk1Ci6IVQQG7NhhaV8lIXdyEJ3F2bvMTO4iMae5GTmztyvuXMkImKcABgjYu58zhjzhc3pnJ+Le8/zmGmazLIs5jiOuAviVikBgO/7fME35ROe37+HfL4Az/NQrVYxHA4Rj8dRKpUQ+BKR2AfrKiQiIt/3+Q0dHRzQ3evXKJvNkmEYJMsyaZpG4XCYUqmU8GGMCf6LRX4inlBU4pXbp6fI7e9DazTAPdptHfbERiKRQLFY5CG4CEG3UmBwU2+oyOw8Q035jP7ZGXZ3X6Jer+Py+jqebG+LgFq5jNjtW/h6fAzm+3AdB7PZbJlUGo/HME0LruuK4Kd3oijl3oIRoGkNjIZDRKNRyLIsgsrvj7B59Qo+FN7Bnc1g25O/E/KnMsbEQaFQwIObG3j1QsZgNIKclkWRUCiEh1tbwsc1R5io3+HpLcx/aPD7XbBuB/N2C8wY/Hkyh6IoeByL4U0uJ2z+w9PpFOl0Gvl8ftHFb0WI5NMpmOctzzml4EM4vhwe4tHGDWT29vDTtpFMJlGpVLC2dgmRSET48LnxIpZlYWAY6PX7Yr+UzWrVga7j4+sM1JMTYZumKfSoaRq63e5yTnxmrVYLtVoNqqqKWfd6vcUMLxLp/0QbSIyj0+lA13U0m03BoMtf0jUi3lAhW9kAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="Untitled2"
-        title="Untitled2"
-        src="/static/d3443d7857b2718432bc66759cd22a54/37523/Untitled2.png"
-        srcset="/static/d3443d7857b2718432bc66759cd22a54/e9ff0/Untitled2.png 180w,
-/static/d3443d7857b2718432bc66759cd22a54/f21e7/Untitled2.png 360w,
-/static/d3443d7857b2718432bc66759cd22a54/37523/Untitled2.png 720w,
-/static/d3443d7857b2718432bc66759cd22a54/302a4/Untitled2.png 1080w,
-/static/d3443d7857b2718432bc66759cd22a54/58354/Untitled2.png 1396w"
-        sizes="(max-width: 720px) 100vw, 720px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<h3 id="4-parameter--hyper-parameter" style="position:relative;"><a href="#4-parameter--hyper-parameter" aria-label="4 parameter  hyper parameter permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Parameter / Hyper Parameter</h3>
-<ul>
-<li>
-<p><strong>Parameter</strong>는 매개변수라는 뜻으로 모델 내부에서 데이터로부터 결정되는 변수입니다.</p>
-</li>
-<li>
-<p><strong>Hyper Parameter</strong>는 모델링할 때 사람이 직접 정해주어야하는 변수입니다.</p>
-</li>
-</ul>
-<h3 id="5-channel--kernel" style="position:relative;"><a href="#5-channel--kernel" aria-label="5 channel  kernel permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Channel / Kernel</h3>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 57.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACB0lEQVQoz3VTXWsTURDNL/DBP+CTFEEogvgH9MHXYoXqg4hQ/CiiRKEo2o1EpaBoSdVgqzUWFKRRskJNfUmwBnwJpQpiDC2t3U3RJUJ2s1/Z7twj99absCEdGHbm3jlzZ2fOxAC0GGMt+ZW2VHlGRJF7aXf7McYYuFIYIgxDMCI4tg3LsiDvukWeCRxRxOcJhXBfKn9qZX1tOx0R832fVatVpus6C8NQxBBRBCNzxOSrq1+/YVpJ4GE8jsJMBta6hi3baVdlex70zU20Wi3hu66LcrmMUqmEer3eqTAwLax8+Ih3Q8eR6u/HWN8+XD+4H2/v3MDPL4tYyOUwlUyimM1C+1FpA7k6jgPDMOB5Xieh2/iLxewUJpRhPBs9icfnB3B68DBu30tgXrmJyb4DGN2zF4O7dkMZOiGbuGNfY/5WAPXTZ4xNPMXIrXEMX7mMMyOXkMrkUJibxNKjU1hNnsPdI4cQv3pWgPL5PNLpNJrNJmzbFoNpV8jtDd1CeXkDC8XvyMwV8UYtoG40ML+0jIsvUnhSeIBjF47iWuK+AKrqe7ycnUWlUhEaBEEn4faQ/pdNDA3TQ9P2hb/2y8VrtYbx5xXElVf489sQIF6ZaZqo1WrQNC3SV0Eb6kEdIhaxebzESZpwCkn6tGkjM3crFx4bkvwDBiIWGUAvose612inlerl91q9f7PZa+/iTEPNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="Untitled3"
-        title="Untitled3"
-        src="/static/68b838fe7c591d6b8f0d2581a643b545/37523/Untitled3.png"
-        srcset="/static/68b838fe7c591d6b8f0d2581a643b545/e9ff0/Untitled3.png 180w,
-/static/68b838fe7c591d6b8f0d2581a643b545/f21e7/Untitled3.png 360w,
-/static/68b838fe7c591d6b8f0d2581a643b545/37523/Untitled3.png 720w,
-/static/68b838fe7c591d6b8f0d2581a643b545/0d1a4/Untitled3.png 1036w"
+        src="/static/bbe4fd6bda9f1ecc80845640e90ce60f/37523/Untitled.png"
+        srcset="/static/bbe4fd6bda9f1ecc80845640e90ce60f/e9ff0/Untitled.png 180w,
+/static/bbe4fd6bda9f1ecc80845640e90ce60f/f21e7/Untitled.png 360w,
+/static/bbe4fd6bda9f1ecc80845640e90ce60f/37523/Untitled.png 720w,
+/static/bbe4fd6bda9f1ecc80845640e90ce60f/5a190/Untitled.png 800w"
         sizes="(max-width: 720px) 100vw, 720px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
@@ -182,108 +94,27 @@
       />
     </span></p>
 <ul>
-<li>
-<p><strong>채널</strong>은 각 계층의 이미지에서 특징의 개수라고 생각하면 편합니다. 일반적으로 입력 이미지는 RGB 3개의 채널을 가졌고 convolution을 거듭할 수록 늘어납니다. 각 계층의 커널의 개수가 채널의 개수와 동일한데, 그 계층의 출력 feature map의 개수 또한 동일하므로 특징의 개수라고 이해할 수 있습니다.</p>
-</li>
-<li>
-<p><strong>커널</strong>은 앞선 설명에서는 filter라고 불렀던 것과 같습니다. 사실 filter보다 많이 쓰이는 용어가 커널이지만 앞에선 설명을 위해 filter라는 용어를 썼고 이제부터는 kernel이라고 부르겠습니다. 일반적으로 정사각 행렬로 이루어졌고 특징을 찾아내기 위한 파라미터이고 학습을 거듭할 수록 더욱 좋은 특징을 찾아내도록 학습됩니다.</p>
-</li>
+<li>모두들 알듯이 뇌에 존재하는 신경세포입니다. 생물학적으로 뉴런은 시냅스라는 뉴런 사이의 길을 통해서 전기신호를 이용해서 신호를 보냅니다. 이는 <strong>BNN</strong>, 즉 <strong>Biological Neural Network</strong>라고 합니다.</li>
 </ul>
-<h3 id="6-stride--padding" style="position:relative;"><a href="#6-stride--padding" aria-label="6 stride  padding permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6. Stride / Padding</h3>
+<hr>
+<h3 id="2-perceptron" style="position:relative;"><a href="#2-perceptron" aria-label="2 perceptron permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Perceptron</h3>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACx0lEQVQ4y42Sy27bRhSGlSxq5EXajfIURbdEdn2CrIq+RNFNgb5AF911lU2awICdWJZjibJI8wwvkmhdOUPdXUuWNeNLXdLkH5BWnLRFgCx+nMEc8sP5/zkFLumxUPQtl+xZqEibxI42vW1o0xtPG127mlBME4o0Lpk2viZtFjEtjBra5LapTa49Lby0NS7pmVDsO6HY4wKXtMUlmwtFCKSN9tREzd+GMXiDzuIIXFKurN9b2XCHBurOn2BiDyfLIwzWFoRi2TcXQrEnBaHYFpfUDS8JvbUX1cy3cdnZidnJbmzwnbi3NOLhlRNPbuzYFG5MzXJsOqW45ryMnfBt3FjoUajsDChyYHBhbQnF+lxa8M8oMZ0D6P4enKAENiqhuzDgz3V0/qrCChmoXYXn78M82YY72Ye/rCUb4Oh/wPaZkRDXwXgF3lRHY3KI7rIOZ1gG8RI6izq8cRXtWRXe+B1a8yoGq+NkY3n0qeV+eMkwuGAJ8QrsYQ3+/Aju6ADdRR3DawfDKwfdpYHG5ADthY7GtIrWrIr+yvw38P5RqJ+FzhUl5sCC0SzBHWcTGQg+hg6+ttBZWrA6h3D5LrorI+sleU99AswsDy4IZwlLfn9p49fnP+KP0s/wxjqC9XEOCyRhemOhIlr46YcX+O2X71EOtzFSTrLZhP9OyNA/N+8oeJNWmq9To7ObHjZepZ1FPfVP9fzcPzfT1kxPbX6QusP9tDmrpP3V8d3GwVAoegAONruWuqN3qLd3wEQJ9c7Owx72zs3cehZB79zI87z/h6WbOv4w4VdcUju7DK/sW/9Uj6xgL3LCcmSL/YhLioRiG92fuWSRkJT3uKRbIVmWIf8w4SMu6Wuh2NNgbRXHN17x9M4vzqJmcR77RaFYkUsqBmvK62f0lEv6Rih6lAFzCcXyOv7bK5ze+YXZP83CPG493H+JhKLCeykYTUnfNjDjAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    style="padding-bottom: 55.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEUlEQVQoz41T2W6DMBD0//9d+k7KVT+UUoI5bM6pZtONECG0K61so/Xs7Hgwt6pCUXxBI3iP6/Ud3ns5r+sq+d8w0zRhHEfM84xlWdC2Lay1CCE8AF+t22a6NwQhKJOgzjkkSYKmaU4vb2N7NgQZxztLgtZ1jTRNhekwDIcsGKxl0+DDM0OCaiE1zLIMfd/L2KrlZ1GIJBr8frm8wX7YZw3JhAyZVfUtj8LuPHOlpnmeo+s6eN/LyozjGGVZ/t6rhLXBTheyIDNlQ/YEjKJIwFVvSsJJCMhagpKYIZBe3luEexYdPYQ228ogI5/5TJkevfa+8c4288M2jXMy4t02y6FtzqwktlEwglPsM2P/9af8AJdoX/1yzMhHAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
-        alt="Untitled4"
-        title="Untitled4"
-        src="/static/c4c6394698b987b40fa0d98e74b40b9b/37523/Untitled4.png"
-        srcset="/static/c4c6394698b987b40fa0d98e74b40b9b/e9ff0/Untitled4.png 180w,
-/static/c4c6394698b987b40fa0d98e74b40b9b/f21e7/Untitled4.png 360w,
-/static/c4c6394698b987b40fa0d98e74b40b9b/37523/Untitled4.png 720w,
-/static/c4c6394698b987b40fa0d98e74b40b9b/3c051/Untitled4.png 760w"
-        sizes="(max-width: 720px) 100vw, 720px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 678px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 51.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABz0lEQVQoz42SbW+iQBSF+/9/VT+s1lbXVlQQEJgBhpfS+gaICvXZMGbX7rdOcnNyb2aenDs5D13XUqQxn7nStSkydrstVVVRlqWu/X7P+XzmJ+ehv6h8i8hZEK5mhM4Sx3GJYoUQkjCM2Gw21HWtH9T1kUNZUVb1TctK6/HYcL1eebhczgh7zmIywnoeYj0NMEZTVs+vOBOD8eSNNE1pmoZ+G5UW+DJFRDnrICYIU933867rbkDpzHFnE+TzADEaEryZKDsgtQXz+YokUTSnM93XF5HKcf0YXyTYa4kXKN3HKv8LvCA8h9n0FW86Yz2eEhgrooWLsnwMwyQvPtmHFpX/iso3eCJBRNk3h8ndYdu2eqX50kHZkshcIw2bcOmiVoEGZu8FVaFoihCVfWrAfeXs/5VvwATTcsm8mMTyiE1Pa24LTNMhf885XVq6KyTZh4aF6l2DZZxrt2n+cQdKKXka/Wb5a8zicYDxOGQxGGO+zHgavhBFEc3xSNe2iDDBcgSOF2GufP2PfS+j5P6HRVEgZYi/9hC+wHHXCBHiewEiEGy323+xqeoj+0Opo/Jd+zjp2PQO+5wdDgcOZakD3QP6QPd9P9/tdpxOpx8F+w9VHOgm+ejI2QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="Untitled5"
-        title="Untitled5"
-        src="/static/09888c04e0f3ebb9c3a37df411339723/38cea/Untitled5.png"
-        srcset="/static/09888c04e0f3ebb9c3a37df411339723/e9ff0/Untitled5.png 180w,
-/static/09888c04e0f3ebb9c3a37df411339723/f21e7/Untitled5.png 360w,
-/static/09888c04e0f3ebb9c3a37df411339723/38cea/Untitled5.png 678w"
-        sizes="(max-width: 678px) 100vw, 678px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<ul>
-<li>
-<p><strong>Stride</strong>는 보폭이라는 뜻으로, kernel이 몇 칸씩 뛰어 넘으며 합성 곱을 수행하는지 결정하는 하이퍼 파라미터입니다.</p>
-</li>
-<li>
-<p><strong>Padding</strong>은 합성 곱을 진행할 때 입력 이미지의 가장자리는 kernel이 한번 밖에 거치지 않기 때문에 영향력이 무시될 수 있습니다. 이를 방지하기 위해 진행하는 padding은 가장자리에 상하좌우에 특정 값으로 채운 몇 줄을 추가해서 입력 이미지의 크기를 키워주는 것입니다. 주로 <strong>zero padding</strong>을 쓰며 이는 0으로 채워줍니다.</p>
-</li>
-</ul>
-<h3 id="7-pooling" style="position:relative;"><a href="#7-pooling" aria-label="7 pooling permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>7. Pooling</h3>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 37.77777777777778%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABv0lEQVQoz32SWW/aUBCF/f9/RNU+VWoeWiAkpGEpwSGYLSSAjReamCxsLjZL8LXre05lqjZtHzrSp5FmNKMzmqOYw9vI1m+FNewLxzbE2OkLy+iK6dNEkBSQySH/AsBvmPJHL0UZqgUu9SvqxSybhXf07QJnnSPq5U+U8wWT+YxyHVDutoRIZ15DktyLiCL6zn0YEwAV97rKZGrA7dbQU4/AQEO0qMHq19I+EEeQvg/sXiA9D8nTIxJvCa4D+O4dTK2KYasCu1/GcjGF0qqc0tDK6FQ/U6vl6AzOqHey1PvaQQVSIPkyblM8m6QEZRyTccyZY1LLvWc184atyltOXIfK+UWeaqeEoppn9rTMonrDk3KLWrf/ujAWh4WhOyC2OyaBT4YhHy2dpcoHZnIZHhca/Ho/odIdXfI5sNHTL3By9gW646E3eECz3gY3AZLVN8jAB9abw8nSXyHxV+BmA+/BRftaRb1xhcvGDeaLJRS1U6Rx32b9Msfjj3m2mybrpSZb5xVyEzDxfcrtlgj3RJL89ZRUvRAR4zhmFIWHimKYeqSbQzGyR8Ie3wnDcsRgZInZ0vtpk39s8T/bABQ/APjiS4veIxnXAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="Untitled6"
-        title="Untitled6"
-        src="/static/0d2729aeb650bf17f30ed0b0004a7b73/37523/Untitled6.png"
-        srcset="/static/0d2729aeb650bf17f30ed0b0004a7b73/e9ff0/Untitled6.png 180w,
-/static/0d2729aeb650bf17f30ed0b0004a7b73/f21e7/Untitled6.png 360w,
-/static/0d2729aeb650bf17f30ed0b0004a7b73/37523/Untitled6.png 720w,
-/static/0d2729aeb650bf17f30ed0b0004a7b73/3534c/Untitled6.png 808w"
-        sizes="(max-width: 720px) 100vw, 720px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 60.55555555555555%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAADZUlEQVQoz3WSa0yTdxSHf2+VgXPLEGtsmWQ4WNHSVipzXYMjumQxM9u8TBjipQiVYcQYL182Fo3DiBbbchMV3JByaV/bt6WKUCrebRsUGpG2pNhAXbRcUixkmwo4/wuTD36Yv+TkfDo5T855gP8PhbeHBYADIArAfABcFhCD92eDHRnx9imy/tNZ3Z/FzZ7KTYF3gwg6Rgl9exl0TcXhtUz5Vk1tkcyYmrClSsLbhDAsTH0DYs7MtnkAImc6m6RL4RQvBtmzCo+/TUD3n37q0YQX4xOdbG/IFxp4aJ/s57PJoIDTVTUNAKB6rwS47Ww9YLWbGKuN0VidrXV3vpOetwg/1HpSl1QOpPAUzjTx3P71PAwfkVDNmgNQlqhj28/uGWg/s/eJvuDXoLGg8Cp5h4BgAKdr8oG+QGeL+5GD9P7hePZgsGuyL2P1S8+Kxc98q/ikLyXhRe/mFeybGWtwckd+GPYTqvGXdQt1Gzkj9TLx30cNPVPHDZ6OfYcJ8vMIjplVgHfovqE34HzpDXSNeEKep/2bvgj5ly8K9q/8ZNwv+Xiw7/vEKBCCvF2/h9sKP0BTUdKsiwelScxPa5ZXaFqST9VcWjp9twXvCalFcdFAj7tN/8BtmXR52oac3itB1/ZvRt1fJo/0fC0dc30lCRjlO7gkESBCIB3AuiVAJgdI4wErFXX4/FDljBcsgKIAY45AT2cnTjI7RUN6WXyw/Bwzqqh3DJfo7GMl2o7AEU07h5AbONOoeVOpd18XNReYFgZcANH/PdgkFxgNcgEx/bgsaMyKG6uoaRpX0p1PS2n7X6X03ZEK8+UoQsqw7bA14vL1QmjpnyMazFUHNedPFFSKYhT1yXG5iGBFs4B4ikIkmCy+hZbxCZMjnGjIiP2notr0SlHXMaVudJDiWtvz6jYHW6m3Q6G1hwG51D3vLa5v3Pfc77OTJ0kcMiSOcdHT3AnzXvObdolW6/NEMma3OMMg52WW1+gzT+psm0vom1tU2ls/lJmbw6stLei+kE21nsuBSnn8I4ta5reodw43HFWFtIXqGySWIA3bqLUbpIA5VwiDXABj3jIYsuJR/huD4kYHSmkblA02nLpkxdmWq6BlfKp5nxjXDknmGzZyRy9kJb84RrtendC6O7NlBOkpBEVNKvwLIS6A/YoBBQgAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="Untitled7"
-        title="Untitled7"
-        src="/static/6176b050b07947182cf2d98c3ebc1bbb/37523/Untitled7.png"
-        srcset="/static/6176b050b07947182cf2d98c3ebc1bbb/e9ff0/Untitled7.png 180w,
-/static/6176b050b07947182cf2d98c3ebc1bbb/f21e7/Untitled7.png 360w,
-/static/6176b050b07947182cf2d98c3ebc1bbb/37523/Untitled7.png 720w,
-/static/6176b050b07947182cf2d98c3ebc1bbb/65654/Untitled7.png 872w"
+        alt="Untitled"
+        title="Untitled"
+        src="/static/0c5bd24d2351b02a861611efc2ffe87a/37523/Untitled1.png"
+        srcset="/static/0c5bd24d2351b02a861611efc2ffe87a/e9ff0/Untitled1.png 180w,
+/static/0c5bd24d2351b02a861611efc2ffe87a/f21e7/Untitled1.png 360w,
+/static/0c5bd24d2351b02a861611efc2ffe87a/37523/Untitled1.png 720w,
+/static/0c5bd24d2351b02a861611efc2ffe87a/42d54/Untitled1.png 858w"
         sizes="(max-width: 720px) 100vw, 720px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
@@ -291,77 +122,175 @@
       />
     </span></p>
 <ul>
-<li><strong>Pooling</strong>은 여러 pixel의 값을 하나의 pixel로 줄여주는 것으로 영상의 크기를 줄이고 정보를 종합하고 싶을 때 사용합니다. Max pooling, Average pooling 등 여러 종류가 있으며 max pooling은 해당 pixel중 가장 큰 값을, average pooling은 평균을 채택합니다.</li>
+<li>1957년 고안된 인공신경망입니다. 다수의 입력과 하나의 출력으로 나타내어지며 구성은 입력, 가중치, 활성함수, 그리고 출력으로 이루어져있습니다. 생물학적인 뉴런의 개념을 따서 만든 컴퓨팅 모델이라고 이해하시면 됩니다.</li>
+<li>이는 아래 그림과 같이 세가지 계층이 있는데 입력 계층, 은닉 계층, 그리고 출력 계층입니다.</li>
 </ul>
-<h3 id="8-receptive-field" style="position:relative;"><a href="#8-receptive-field" aria-label="8 receptive field permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>8. Receptive Field</h3>
 <p><span
       class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 580px; "
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 701px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 73.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACP0lEQVQ4y5VUO2/TUBTOD0FsiEoMTHRBKBswlV8CYmCgLB0YETNCSsVSJKQIhBgIpUg0RSAKSV+EugWc2E5sp6kbv+34+vGhexMb5zVwpaMr+5zznXO+7+gWkDtJkmS347qwLROWacA0deiGAcMw4LnOWNzkKeQ/4jhmt2maKF4r4tz5i1i4tIgLC5exdP0mrl5ZxK0bRViGNgQcxc8FTCuGJMDW6zIeP3qC0v1lrNxdxoN7D/FqbRXV9TLrMo2f7HIGIA0C+n0dDU6CvLGB9y8reP6igtLTZ6h9qYJ49v8ADkc/3t/B3uZHNNY/4Nu7CsqlVazcuY3NN2/RN7wpzqcA89UoN3pHgFb/BOt7FZZwDOVwH9rvBhyRw8mpDdePZgpTyINRIOqOowihqoAITUQDH0k8pIJZErMJumfe7A5nSQ9VBkbEZxuQJAwoHsXrVgDbJVPTsQ7pfrUlCbLaRefoCJ0fB5B7PbTbbciynK1Tjm2QMIZmBlP8M8BWqwXHcTAIAjh/fsG3bfi+j8FgwHyEEGiahlp9B5ZlscQoiiCfWCAkYP4UlAGKosgYAnXWtpGYRlZZURSWcKZp2P68BUPX2X+eb+LrLg9F7aLJ81mhDDCMIiSEMDFi10U6JB3Z833aE9DlgGjYzd7BT9QPVRiWj7Ykotc7/QcoCALmHVVV4XnDvYtCknFF+RVEiU3A8zyjbKxDCkqDJFGEJEmZcRyHIAhGUmDuozDGIVWRJk0aFSUMw7HVyO9eajQ/Vfkvth5tpHRes4wAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    style="padding-bottom: 67.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/UlEQVQ4y32T627bMAyF/f5vtZ/FgKFr02JJFqeN76kdX3SxJNv5BmnLkKRACQiCBPKQ55CMzuczy7Lgb29d15EkCXmeM88zdV1zSN9I0gNCyODjfa/P5c9bxD+7fDRNQ5ZlAVApTa9adsUzaf0brdUnwPt3NAxDCPY2TRPzNF1yIIXiUOb8Sn6wy1e0/cC93YNGnmKgtyyB+qmTrN8asqOgaQeUMhinsG5EjwY1GjabNevNljiOgyzXFlVVxW63w7oZ6ybespaHp3eetkey8oS1juU8My8zzjmUNrRdzygHpJRYa0NlHrwsSyKfwTuGkpcFqTTVaaQVhuqj53j6YF++kBy3KK0wdqLN9nTxI+OpYDSWaZ6D7r6B0XW5Hnxy9v+7bgRJlbHaP7BJf9ILgRoddfxC+viNIY+R2oQkaZqGCYmEEKGz87wEwGMjWG0rdklLXrXocUTZHm0kzlmMsYh+YJEnJmcwxtw0KPK815sNznnqE4eiCxo+byvKjy5o+NebEKy0xVhPcwn6fWrK9Tz5Lo+j18+hzcwwSMq6Zl++ktUx/SDxrkpK+r4PTVFKhfsCfKOhB9Ra46zBWoNWmrIpeH3/HjQUSgQfz8qPmp+QoijC8aA3FV4P6GUVfVa/HU1f0okmVP+VBQ3vp/3ewW/P5Kag74XW/S5fx/8BrvLssBUfwxUAAAAASUVORK5CYII='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
-        alt="Untitled8"
-        title="Untitled8"
-        src="/static/084847360817dc05f6694f92c37f5a75/b6272/Untitled8.png"
-        srcset="/static/084847360817dc05f6694f92c37f5a75/e9ff0/Untitled8.png 180w,
-/static/084847360817dc05f6694f92c37f5a75/f21e7/Untitled8.png 360w,
-/static/084847360817dc05f6694f92c37f5a75/b6272/Untitled8.png 580w"
-        sizes="(max-width: 580px) 100vw, 580px"
+        alt="Untitled"
+        title="Untitled"
+        src="/static/7e7813b1ece4ccf68a03e316aaccaace/49217/Untitled2.png"
+        srcset="/static/7e7813b1ece4ccf68a03e316aaccaace/e9ff0/Untitled2.png 180w,
+/static/7e7813b1ece4ccf68a03e316aaccaace/f21e7/Untitled2.png 360w,
+/static/7e7813b1ece4ccf68a03e316aaccaace/49217/Untitled2.png 701w"
+        sizes="(max-width: 701px) 100vw, 701px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
         decoding="async"
       />
     </span></p>
 <ul>
-<li><strong>Receptive Field</strong>는 kernel로 입력 영상에 대해 연산을 수행할 때 해당 연산의 결과에서 한 pixel이 얼만큼의 pixel 정보들을 내포하는 지를 나타냅니다. 예를 들어보자면 5x5 kernel을 한번 적용한 결과 map의 한 pixel은 입력 영상의 5x5 영역의 정보를 포함합니다. 그렇다면 3x3 kernel을 두번 연속으로 적용한다면 결과는 어떻게 될까요? 이 두가지 예의 receptive field는 서로 같습니다. 3x3을 수행하고 한번 더 3x3을 수행한다면 3x3의 receptive field를 가지고 있는 첫 번째 feature map에서 3x3을 한번 더 진행한 것이므로 5x5의 같은 receptive field를 가집니다.</li>
+<li>세개의 계층(Layer)중에서 왼쪽 계층인 입력 계층은 입력 데이터를 받는 계층이고 오른쪽 계층은 출력 계층으로 출력 결과물을 만들어내는 역할을 합니다. 여기서 중요한 부분은 입출력 계층 사이에 있는 **은닉 계층(Hidden Layer)**입니다.</li>
+<li>위 그림에서 각 노드끼리 연결되어 있는 선들은 노드 사이에서 일어나는 연산을 의미합니다. 이때 연결 강도는 **Weight(가중치)**라는 용어로 부르고 **Bias(편향)**이라는 상수 또한 존재합니다.</li>
+<li>은닉 계층이 2개 이상인 네트워크를 <strong>Deep Neural Network</strong>라고 합니다.</li>
 </ul>
-<blockquote>
-<p>큰 receptive field는 local information과 contextual information이 중요한 컴퓨터 비전 분야에서는 정확도 면에서 좋은 결과를 뽑아내는 데 도움이 됩니다.</p>
-</blockquote>
-<h3 id="9-activation-function" style="position:relative;"><a href="#9-activation-function" aria-label="9 activation function permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>9. Activation Function</h3>
+<hr>
+<h3 id="3-weight가중치-bias편향" style="position:relative;"><a href="#3-weight%EA%B0%80%EC%A4%91%EC%B9%98-bias%ED%8E%B8%ED%96%A5" aria-label="3 weight가중치 bias편향 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Weight(가중치), Bias(편향)</h3>
 <p><span
       class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 678px; "
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 49.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABgUlEQVQoz3VS2YrCQBCc//8sUV/ifSFG0QdRNGtiTDL3pJZunbAsuw0NQ6a6pqo6YjqdIkkS7l6vh8Vigc1mg1GSYDAYYDAcIt3t8F+1bcsNagDifr8zyXa7xfV65UvvPZRSuOUvVI2Cd46/p2mK5XKJ+XzOjxpjmITw1nnU2kKUZYnRaITD4YDL5QLnPIPostGuU0JD6/Uas9kM+/2eybXWUSbySsE4D9F+pFJVVcWgRhlkzxrWOSb6ifldUlt28moUQvAQRVFgtVp18mMRWVZKKPNWGULA+XxmF4/H4988RZ7nmEwmOB6PHWnwHsVLomo0nyOYFtjv9zk/yphmn88nO4uzolNkLdujMi7gVrwtR7KokjC8BGshpWQiIncfrMiyjDcXbfBvwIcAbR0qZTtLtJTT6fSn3YjlDMfjMW+OzqSCBNG2Hy8J7wMPkALKr65rxpBNsktYbSy+CBsCBF2SfOqYg7UOZa0gteHNRbv0INmjJruyaaCNw72omJTy/gZnqQDpAS3YYQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    style="padding-bottom: 56.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVQoz62S30vbUBTH8/+/DYZM2IMwGHuYqzoZMpgrDato2lRnaGNrzRpTsY30h03SmubmM3JKbFcVfNgXDtzz5fs999xzrpamKVlkyM+rXAaVqn/yHKuceAAtJybh/RPDNJySxMljPp/PmUzuJbKzcEoRRFFedVHQsTx+7zv8qXeFD6MQ/aLE7nmBQm2bM+dUeNfto+td9JJH17sjRdEqGjR3itw6rmi0h3iG+fWC6geH4x2Lfr9P+bTM++omm0cbvC294ZP1kY7rUDNb7O1esf25QdW0OTkqY23tY737QrtokORP7tg3VPds3OaN3DKbzTi5PObA/sb3xgENtyH89bVP+VfWYQfP84Vr6hWswg98b+HVloN9OvR1KKWYTgOS5IE0VcuFrCxGClrnFqZZo92+IkkWS2hdtjBrJoc/D/G6nnBxHIuuXq9LPhwOMQyDSqWCbdvilSePRiN83ycIgscvE0URg8GAXq8nI8g7GI/Hos+3nuWZLgzDZYevwbruJZ/23Id+LtZ1L/k0/jP+AipTRxwAMQmAAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
-        alt="Untitled9"
-        title="Untitled9"
-        src="/static/22b8997fc4f39ca63314840b566a511d/38cea/Untitled9.png"
-        srcset="/static/22b8997fc4f39ca63314840b566a511d/e9ff0/Untitled9.png 180w,
-/static/22b8997fc4f39ca63314840b566a511d/f21e7/Untitled9.png 360w,
-/static/22b8997fc4f39ca63314840b566a511d/38cea/Untitled9.png 678w"
-        sizes="(max-width: 678px) 100vw, 678px"
+        alt="Untitled"
+        title="Untitled"
+        src="/static/d4c33eff3caa4c81f95916c8345e33ae/37523/Untitled3.png"
+        srcset="/static/d4c33eff3caa4c81f95916c8345e33ae/e9ff0/Untitled3.png 180w,
+/static/d4c33eff3caa4c81f95916c8345e33ae/f21e7/Untitled3.png 360w,
+/static/d4c33eff3caa4c81f95916c8345e33ae/37523/Untitled3.png 720w,
+/static/d4c33eff3caa4c81f95916c8345e33ae/302a4/Untitled3.png 1080w,
+/static/d4c33eff3caa4c81f95916c8345e33ae/07a9c/Untitled3.png 1440w,
+/static/d4c33eff3caa4c81f95916c8345e33ae/29114/Untitled3.png 1920w"
+        sizes="(max-width: 720px) 100vw, 720px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
         decoding="async"
       />
     </span></p>
 <ul>
-<li>활성 함수라는 뜻으로 입력 값을 신호로 본다면 이 신호가 활성화되는지 확인하는, 즉 필요한 값을 솎아내는 역할을 합니다. 활성 함수에는 굉장히 많은 종류가 있습니다. 대표적으로 Sigmoid, ReLU 등이 있고 이 활성 함수는 모델의 비선형성을 증가 시켜주는 역할도 있습니다.</li>
+<li><strong>Weight(가중치)</strong> : Learnable Parameter로써 위에서 설명한 뉴런(노드) 사이의 연결 강도를 의미하며 이전 레이어에서 넘어온 입력이 다음 레이어에서 얼마나 중요한 역할을 하는지 결정해주는 변수라고 생각하시면 이해가 쉬울 것 같습니다. 중요도(가중치)를 의미하므로 입력 값에 곱해주게 됩니다. 훈련을 거듭하면서 더욱 정확한 결과물을 도출하기 위한 값으로 업데이트 됩니다.</li>
+<li><strong>Bias(편향)</strong> : 입력에 가중치를 곱해준 값에 더해주는 값으로 수식에서 상수와 같은 역할을 합니다. 이로써 $y = Wx + b$라는 수식이 완성됩니다. Bias 또한 훈련을 거듭하며 업데이트가 되며 활성화 함수를 거친 값에 최종적으로 출력 값을 조절해주는 역할을 합니다.</li>
 </ul>
-<h3 id="10-마무리" style="position:relative;"><a href="#10-%EB%A7%88%EB%AC%B4%EB%A6%AC" aria-label="10 마무리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>10. 마무리</h3>
-<p>여기까지 기초 용어들을 정리해봤습니다. 사실 아직 정리하지 못한 용어가 산더미입니다.😢 Batch, back propagation 등등 아주 많아요.. 나머지 용어들은 기초 용어 정리 2에서 더 정리해보겠습니다.</p>
-<p>읽어주셔서 감사합니다!</p>
+<hr>
+<h3 id="4-인공지능-부흥cnn" style="position:relative;"><a href="#4-%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%B6%80%ED%9D%A5cnn" aria-label="4 인공지능 부흥cnn permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. 인공지능 부흥(CNN)</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5UlEQVQoz32SyQrEQAhE+/8/MpBD9n3f4/AKHOY0DaK2VpVtEu77tvd97XkeefLruuTP85Q/jkN3HHKMAwbznBPKsrS2bWXjOFqWZdb3vTy1dV2taRorisK2bbOqqlRHbBgG5XVdS5SBQpIklqapCOZ5loeAJmoQAUQQga7rREIPMVj6yJk2eANAlIm5Aww5ZMRRFEkQAmxZlu/kiE/TpLWEPM9VoGHfdyMnpglySKhDzpMBMi339DIdHlGeHVCO41gkTMaUvhvAGEIsnhgQ+4PIicF8d8jSIaD5t+DT/Dv+h2D+lT8XeRjjECRL2wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Untitled"
+        title="Untitled"
+        src="/static/5026df362afc32b514aaea4e6397d7d8/37523/Untitled4.png"
+        srcset="/static/5026df362afc32b514aaea4e6397d7d8/e9ff0/Untitled4.png 180w,
+/static/5026df362afc32b514aaea4e6397d7d8/f21e7/Untitled4.png 360w,
+/static/5026df362afc32b514aaea4e6397d7d8/37523/Untitled4.png 720w,
+/static/5026df362afc32b514aaea4e6397d7d8/302a4/Untitled4.png 1080w,
+/static/5026df362afc32b514aaea4e6397d7d8/07a9c/Untitled4.png 1440w,
+/static/5026df362afc32b514aaea4e6397d7d8/71c1d/Untitled4.png 1536w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>
+<p>위 그림은 2012년 개최된 ILSVRC 대회에서 우승을 차지만 CNN 구조인 AlexNet입니다. CNN 구조의 부흥에 아주 큰 역할을 했다고 할 수 있습니다.</p>
+</li>
+<li>
+<p>먼저 인공지능 중에서도 CNN 구조의 딥 러닝에 대한 이론은 전부터 많이 나왔지만 제대로 쓰이지 못했던 가장 큰 이유는 앞서 소개한 Hand-crafted 모델에 비해 성능이 떨어졌기 때문입니다. 자, 그러면 왜 주목받지 못할 정도로 한참 성능이 떨어졌을까요?</p>
+<ol>
+<li>
+<p><strong>하드웨어의 한계</strong> : 엄청난 양의 파라미터들을 Handling하기에 병렬처리가 불가능했던 옛날 하드웨어의 성능이 따라가지 못했습니다.(현재는 엄청난 성능의 GPU로 모델의 학습 속도 향상 및 Real-time 연산 수행이 가능해짐)</p>
+</li>
+<li>
+<p><strong>알고리즘의 한계</strong> : 많이 연구되지 않은 분야였기에 알고리즘 적으로도 문제가 많았습니다.(최근 많은 주목을 받은 만큼 다양한 분야의 인재들이 대거 투입되어 활발한 연구 진행중. 매년 수 많은 연구가 진행되며 다양한 논문이 발표됨)</p>
+</li>
+<li>
+<p><strong>데이터의 한계</strong> : 모델 학습을 위해 수 많은 데이터들이 필요한데, 이 데이터들을 모두 수집하기에는 큰 어려움이 있었습니다.(현재는 인터넷의 발달로 많은 연구원들이 수집한 데이터셋들을 인터넷에서 쉽게 찾을 수 있음)</p>
+</li>
+</ol>
+</li>
+<li>
+<p>이렇게 많은 한계를 극복하고 2012년 AlexNet을 필두로 획기적인 전환점을 맞이합니다.</p>
+</li>
+</ul>
+<hr>
+<h3 id="5-신경망의-학습" style="position:relative;"><a href="#5-%EC%8B%A0%EA%B2%BD%EB%A7%9D%EC%9D%98-%ED%95%99%EC%8A%B5" aria-label="5 신경망의 학습 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. 신경망의 학습</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 513px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 81.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVQ4y3VUWeu5URA+5ep34WMqVxQXPoMvoBSSJCVxQym54YIiokTZ933ft/n3TI1e9J96O2fOmXlmeea8ijSy2Wyo2+1Sv9+nwWDA63g85rNGo0G9Xo9OpxPbvl4v/mQvoqBcr1daLBY0n895Bch0On2fjUYjms1mtFwu+Q77b9A34PF4ZKPdbscHl8uF1us1rVYr1pERgOR+MplQpVKh/X7/ASqfQgbBYJAzgjMCRKNRqtfrnDkAcI+sns8nPR4PBrrdbqx/i4rFYqSUokAgwAeFQoF1q9XKut/vZx0rwNrtNkUiEQ4s8pEhyvN4PNRsNrksZOrz+Sifz7NTq9Uir9fLpEDsdjsHSCaTtN1uuT3whR0CKlzAAGVBisUi/f39kc1mYz0UCvE91vv9TtVqlcLhMJ3P5x+GuWQgm0wmKpfLTAh6inLj8Tgb12o1MpvNVCqVWHc4HKTX6ymXy7H94XDgccJoQVeCjOggQNhE04fDIRMjmYDZRCJBRqOROp0OtwQgQiZIUsIaDjEqmD3RwawEABgcUqkUGQwGnk1JBL3Ehz3PYTab5VcBBzQ5k8m8SUCW6XSaS4K43W7S6XRsg5eFgLDBy0I1P2ODoYVusVg+SBHS4IR2/E8U+uZ0Orl/ELCHMQEwBGPkcrl4lRIFGBX9vBRBRunom4wDHMEgmi6BcI9eAgy91wK9M9S+XzQavcAYIGNkJWfY482DNO1f5mcOtQdgGQACiD0AsAcpAEbW3wOtzfAf35iEwyQuU0AAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Untitled"
+        title="Untitled"
+        src="/static/20f7320deea786acfb62dc9676129816/267f6/Untitled5.png"
+        srcset="/static/20f7320deea786acfb62dc9676129816/e9ff0/Untitled5.png 180w,
+/static/20f7320deea786acfb62dc9676129816/f21e7/Untitled5.png 360w,
+/static/20f7320deea786acfb62dc9676129816/267f6/Untitled5.png 513w"
+        sizes="(max-width: 513px) 100vw, 513px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<ul>
+<li>데이터를 입력하고 연산을 거쳐 결과를 도출해내는 과정을 **순전파(Forward Propagation)**이라고 합니다. 이때 모델이 **예측한 값(Estimation)**과 해당 데이터의 **정답(Ground Truth)**의 차이를 **손실 함수(Loss Function)**를 사용하여 <strong>에러</strong>, **손실(Loss)**을 계산합니다. 이 손실 값을 이용해서 현재 예측에 사용된 Weight , Bias 등 파라미터들이 얼마나 잘못되었는지 체크하고 거꾸로 돌아가서 손실을 더 낮추는 방향으로 업데이트하는 것이 역전파입니다.</li>
+<li>**역전파(Backward Propagation)**은 역방향으로 출력에서 입력 방향으로  손실의 **미분 값(Gradient)**이 줄어드는 방향으로 업데이트 합니다. 해당 방법을 **경사하강법(Gradient Descent)**라고 합니다. **연쇄법칙(Chain rule)**을 사용해서 편미분을 보다 쉽게 계산하는 것을 수학적으로 좀 더 자세히 설명하고 싶은데 일단 기초 이론이므로 다음에 기회가 된다면 새로운 포스팅을 작성해보겠습니다.</li>
+<li>**학습률(Learning Rate)**라는 것도 존재하는데 이는 학습된 값을 얼만큼 적용하냐를 결정해주는 하이퍼파라미터입니다. 해당 변수가 너무 크다면 <strong>과적합(Overfitting)</strong> 문제가 발생해서 발산해버리는 문제가 발생할 수 있습니다. 반면 너무 작다면 학습이 지나치게 오래 걸리는 문제가 발생할 수 있으므로 적당한 값을 찾아서 설정해주어야 합니다.</li>
+</ul>
+<hr>
+<h3 id="6-마무리" style="position:relative;"><a href="#6-%EB%A7%88%EB%AC%B4%EB%A6%AC" aria-label="6 마무리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6. 마무리</h3>
+<p>이상으로 딥 러닝 기초 이론 포스팅을 마치겠습니다. 항상 말씀드리지만 틀린 부분도 있고 빼먹은 부분도 많을 거라고 생각합니다😭 자주 체크하며 틀린 부분은 고쳐나가겠습니다. 감사합니다!</p>
 <div class="table-of-contents">
 <ul>
-<li><a href="#1-data">1. Data</a></li>
-<li><a href="#2-model">2. Model</a></li>
-<li><a href="#3-convolution-layer">3. Convolution Layer</a></li>
-<li><a href="#4-parameter--hyper-parameter">4. Parameter / Hyper Parameter</a></li>
-<li><a href="#5-channel--kernel">5. Channel / Kernel</a></li>
-<li><a href="#6-stride--padding">6. Stride / Padding</a></li>
-<li><a href="#7-pooling">7. Pooling</a></li>
-<li><a href="#8-receptive-field">8. Receptive Field</a></li>
-<li><a href="#9-activation-function">9. Activation Function</a></li>
-<li><a href="#10-%EB%A7%88%EB%AC%B4%EB%A6%AC">10. 마무리</a></li>
+<li>
+<ul>
+<li><a href="#%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94-%EC%98%A4%EB%8A%98%EC%9D%80-%EB%94%A5-%EB%9F%AC%EB%8B%9D%EC%9D%98-%EA%B8%B0%EC%B4%88%EC%A0%81%EC%9D%B8-%EC%9D%B4%EB%A1%A0%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%B4%EB%B3%B4%EB%A0%A4%EA%B3%A0-%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%A0%80%EB%8A%94-%EB%89%B4%EB%9F%B4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%A4%91%EC%97%90%EC%84%9C%EB%8F%84-cnn%EC%9D%84-%EC%9C%84%EC%A3%BC%EB%A1%9C-%EA%B3%B5%EB%B6%80%ED%96%88%EA%B8%B0-%EB%95%8C%EB%AC%B8%EC%97%90-%EC%95%84%EB%A7%88-%EB%8B%A4%EB%A5%B8-%EB%B6%80%EB%B6%84%EC%9D%84-%EB%8B%A4%EB%A3%AC-%ED%8F%AC%EC%8A%A4%ED%8C%85%EC%9D%84-%EC%9B%90%ED%95%98%EC%8B%A0%EB%8B%A4%EB%A9%B4-%EB%8B%A4%EB%A5%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%B0%BE%EC%95%84%EB%B3%B4%EC%85%94%EC%95%BC-%ED%95%A0%EA%B1%B0%EC%97%90%EC%9A%94-%EA%B7%B8%EB%9F%BC-%EC%8B%9C%EC%9E%91%ED%95%B4%EB%B3%B4%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4">안녕하세요. 오늘은 딥 러닝의 기초적인 이론들을 정리해보려고 합니다. 저는 뉴럴 네트워크 중에서도 CNN을 위주로 공부했기 때문에 아마 다른 부분을 다룬 포스팅을 원하신다면 다른 블로그를… 찾아보셔야 할거에요… 😂 그럼 시작해보겠습니다!</a></li>
 </ul>
-</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/Introduction/"><div class="direction">이전 글</div><div class="title">블로그 오픈했습니다!</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/Deep learning basic theory/"><div class="direction">다음 글</div><div class="title">딥러닝 기초 이론 정리</div></a></div></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/yon-ninii">박용민</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Deep learning terms/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-b1cc9f858f4132668f22.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-97a8d3c35e8d1fa14a1b.js" async=""></script><script src="/app-b1cc9f858f4132668f22.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-02f59eb8e2b9c93c6a8d.js" async=""></script></body></html>
+</li>
+<li>
+<p><a href="#0-%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0-%EC%A0%84">0. 들어가기 전..</a></p>
+</li>
+<li>
+<p><a href="#1-%EB%89%B4%EB%9F%B0">1. 뉴런</a></p>
+</li>
+<li>
+<p><a href="#2-perceptron">2. Perceptron</a></p>
+</li>
+<li>
+<p><a href="#3-weight%EA%B0%80%EC%A4%91%EC%B9%98-bias%ED%8E%B8%ED%96%A5">3. Weight(가중치), Bias(편향)</a></p>
+</li>
+<li>
+<p><a href="#4-%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%B6%80%ED%9D%A5cnn">4. 인공지능 부흥(CNN)</a></p>
+</li>
+<li>
+<p><a href="#5-%EC%8B%A0%EA%B2%BD%EB%A7%9D%EC%9D%98-%ED%95%99%EC%8A%B5">5. 신경망의 학습</a></p>
+</li>
+<li>
+<p><a href="#6-%EB%A7%88%EB%AC%B4%EB%A6%AC">6. 마무리</a></p>
+</li>
+</ul>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/Deep learning terms/"><div class="direction">이전 글</div><div class="title">딥러닝 기초 용어 정리</div></a></div><div class="post-navigator-card-wrapper"></div></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/yon-ninii">박용민</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Deep learning basic theory/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-b1cc9f858f4132668f22.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-97a8d3c35e8d1fa14a1b.js" async=""></script><script src="/app-b1cc9f858f4132668f22.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-02f59eb8e2b9c93c6a8d.js" async=""></script></body></html>

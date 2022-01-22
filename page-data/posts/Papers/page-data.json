@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/Papers",
+    "result": {"pageContext":{"currentCategory":"Papers","categories":["All","Papers","Basic","Blog"],"edges":[{"node":{"id":"275a3a76-e646-5355-b9a5-bbd0502c3614","excerpt":"안녕하세요. 오늘은 드디어 첫번째 논문 리뷰 포스팅입니다! 오늘 리뷰할 논문은 바로 2014년 옥스포드 대학의 연구팀 VGG에 의해 발표된 “Very Deep Convolutional Networks for Large-Scale Image Recognition” 입니다! https://arxiv.org/abs/1409.1556 당시 이미지넷 인식 대회에서 준우승을 한 획기적인 네트워크였습니다. VGGNet은 VGG-16과 VGG-19로 나뉘는데 이 숫자는 Layer의 개수를 의미합니다. 한 마디로 16계층과 19계층짜리 네트워크를 만든거라고 보면 됩니다. 이 논문이 중요하다고 생각하는 이유는 해당 논문의 발표 이후로 네트워크의 깊이가 얼마나 중요한지, 또한 어떻게 깊게 만드는지에 대한 인식을 하기 시작했다고 생각하기 때문입니다. 자, 이제 리뷰를 시작해보겠습니다. 0. 들어가기 전..  위 그림은 네트워크 깊이와 ImageNet 에러율에 대한 그래프입니다. VGG 이전에 발표된 A…","fields":{"slug":"/VGGnet/"},"frontmatter":{"categories":"Papers","title":"<논문리뷰> VGGNet","date":"January 22, 2022"}},"next":{"fields":{"slug":"/Deep learning basic theory/"}},"previous":null}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}

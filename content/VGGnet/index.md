@@ -1,9 +1,9 @@
 ---
 emoji: 🧚🏻‍♀️
-title: 딥러닝 기초 용어 정리
-date: "2022-01-18 16:00:00"
+title: [논문리뷰] VGGNet (Very Deep Conolutional Networks for Large-Scale Image Recognition)
+date: "2022-01-22 22:00:00"
 author: Yon_ninii
-tags: Deep learning terms
+tags: VGGNet
 categories: Papers
 ---
 

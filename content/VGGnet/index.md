@@ -1,6 +1,6 @@
 ---
 emoji: 🧚🏻‍♀️
-title: [논문리뷰] VGGNet (Very Deep Conolutional Networks for Large-Scale Image Recognition)
+title: [논문리뷰]VGGNet(Very Deep Conolutional Networks for Large-Scale Image Recognition)
 date: '2022-01-22 22:00:00'
 author: Yon_ninii
 tags: VGGNet

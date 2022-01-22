@@ -4,7 +4,7 @@ title: 딥러닝 기초 용어 정리
 date: "2022-01-18 16:00:00"
 author: Yon_ninii
 tags: Deep learning terms
-categories: Basic
+categories: Papers
 ---
 
 **안녕하세요. 오늘은 드디어 첫번째 논문 리뷰 포스팅입니다! 오늘 리뷰할 논문은 바로 2014년 옥스포드 대학의 연구팀 VGG에 의해 발표된 “Very Deep Convolutional Networks for Large-Scale Image Recognition” 입니다!**
